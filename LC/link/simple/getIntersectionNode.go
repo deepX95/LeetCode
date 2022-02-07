@@ -1,7 +1,9 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // GetIntersectionNode 160.相交链表
-func GetIntersectionNode(headA, headB *ListNode) *ListNode {
+func GetIntersectionNode(headA, headB *link.ListNode) *link.ListNode {
 	// 双指针
 	if headA == nil || headB == nil {
 		return nil

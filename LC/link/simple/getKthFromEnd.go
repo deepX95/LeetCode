@@ -1,7 +1,9 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // GetKthFromEnd 剑指 Offer 22. 链表中倒数第k个节点
-func GetKthFromEnd(head *ListNode, k int) *ListNode {
+func GetKthFromEnd(head *link.ListNode, k int) *link.ListNode {
 	// 顺序查找
 	//n:=0
 	//for node:=head;node!=nil;node=node.Next{

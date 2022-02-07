@@ -2,6 +2,7 @@ package main
 
 import (
 	"LeetCode/LC/link"
+	"LeetCode/LC/link/simple"
 )
 
 func main() {
@@ -55,5 +56,5 @@ func main() {
 		},
 	}
 
-	link.GetIntersectionNode(headA,headB)
+	simple.GetIntersectionNode(headA,headB)
 }

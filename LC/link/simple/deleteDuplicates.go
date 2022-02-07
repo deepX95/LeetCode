@@ -1,7 +1,9 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // DeleteDuplicates 83. 删除排序链表中的重复元素
-func DeleteDuplicates(head *ListNode) *ListNode {
+func DeleteDuplicates(head *link.ListNode) *link.ListNode {
 	// 1.题解官方答案
 	cur := head
 	for cur!=nil && cur.Next != nil {

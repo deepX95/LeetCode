@@ -1,8 +1,10 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // RemoveElements 203. 移除链表元素
-func RemoveElements(head *ListNode, val int) *ListNode {
-	pre := &ListNode{Next: head}
+func RemoveElements(head *link.ListNode, val int) *link.ListNode {
+	pre := &link.ListNode{Next: head}
 	curr:=pre
 	for curr.Next != nil {
 		if curr.Next.Val == val {

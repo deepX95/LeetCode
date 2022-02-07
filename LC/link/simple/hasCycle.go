@@ -1,7 +1,9 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // HasCycle 141 循环链表
-func HasCycle(head *ListNode) bool {
+func HasCycle(head *link.ListNode) bool {
 	// 方法1
 	//if head==nil{
 	//	return false

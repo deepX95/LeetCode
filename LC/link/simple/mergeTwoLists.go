@@ -1,8 +1,10 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // MergeTwoLists 21. 合并两个有序链表
-func MergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-	head:=&ListNode{}
+func MergeTwoLists(l1 *link.ListNode, l2 *link.ListNode) *link.ListNode {
+	head:=&link.ListNode{}
 	cursor :=head
 	for l1!=nil && l2!=nil{
 		if l1.Val<=l2.Val{

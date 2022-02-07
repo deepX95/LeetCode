@@ -1,7 +1,9 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // DeleteNode 删除节点
-func DeleteNode(head *ListNode, val int) *ListNode {
+func DeleteNode(head *link.ListNode, val int) *link.ListNode {
 	if head.Val == val {
 		return head.Next
 	}

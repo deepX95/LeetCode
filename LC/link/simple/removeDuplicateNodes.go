@@ -1,7 +1,9 @@
-package link
+package simple
+
+import "LeetCode/LC/link"
 
 // RemoveDuplicateNodes 面试题 02.01. 移除重复节点
-func RemoveDuplicateNodes(head *ListNode) *ListNode {
+func RemoveDuplicateNodes(head *link.ListNode) *link.ListNode {
 	// 1.哈希表
 	//if head==nil{
 	//	return nil

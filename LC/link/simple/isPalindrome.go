@@ -1,7 +1,8 @@
-package link
+package simple
 
+import "LeetCode/LC/link"
 
-func IsPalindrome(head *ListNode) bool {
+func IsPalindrome(head *link.ListNode) bool {
 
 
 	return false
