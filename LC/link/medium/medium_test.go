@@ -105,3 +105,43 @@ func TestRemoveNthFromEnd(t *testing.T) {
 		})
 	}
 }
+
+func TestDeleteDuplicates(t *testing.T) {
+	type args struct {
+		head *link.ListNode
+	}
+	tests := []struct {
+		name string
+		args args
+		want *link.ListNode
+	}{
+		{
+			name: "test",
+			args: args{
+				head: &link.ListNode{
+					Val: 1,
+					Next: &link.ListNode{
+						Val: 1,
+						Next: &link.ListNode{
+							Val: 1,
+							Next: &link.ListNode{
+								Val: 2,
+								Next: &link.ListNode{
+									Val:  3,
+									Next: nil,
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := DeleteDuplicates(tt.args.head); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("DeleteDuplicates() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
