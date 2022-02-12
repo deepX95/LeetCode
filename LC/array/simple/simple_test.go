@@ -11,9 +11,9 @@ func TestMoveZeroes(t *testing.T) {
 		args args
 	}{
 		{
-			name:"test",
+			name: "test",
 			args: args{
-				nums:[]int{1,2,0,0,3,4,5,6},
+				nums: []int{1, 2, 0, 0, 3, 4, 5, 6},
 			},
 		},
 	}
@@ -36,14 +36,43 @@ func TestSingleNumber(t *testing.T) {
 		{
 			name: "test",
 			args: args{
-				nums:[]int{2,2,1},
+				nums: []int{2, 2, 1},
 			},
 		},
 	}
-		for _, tt := range tests {
+	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := SingleNumber(tt.args.nums); got != tt.want {
 				t.Errorf("SingleNumber() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestSearch(t *testing.T) {
+	type args struct {
+		nums   []int
+		target int
+	}
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{
+			name: "test",
+			args: args{
+				nums: []int{
+					-1, 0, 3, 5, 9,
+				},
+				target: 9,
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := Search(tt.args.nums, tt.args.target); got != tt.want {
+				t.Errorf("Search() = %v, want %v", got, tt.want)
 			}
 		})
 	}
