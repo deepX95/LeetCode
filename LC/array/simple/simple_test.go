@@ -1,6 +1,8 @@
 package simple
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestMoveZeroes(t *testing.T) {
 	type args struct {
@@ -44,35 +46,6 @@ func TestSingleNumber(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			if got := SingleNumber(tt.args.nums); got != tt.want {
 				t.Errorf("SingleNumber() = %v, want %v", got, tt.want)
-			}
-		})
-	}
-}
-
-func TestSearch(t *testing.T) {
-	type args struct {
-		nums   []int
-		target int
-	}
-	tests := []struct {
-		name string
-		args args
-		want int
-	}{
-		{
-			name: "test",
-			args: args{
-				nums: []int{
-					-1, 0, 3, 5, 9,
-				},
-				target: 9,
-			},
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := Search(tt.args.nums, tt.args.target); got != tt.want {
-				t.Errorf("Search() = %v, want %v", got, tt.want)
 			}
 		})
 	}
