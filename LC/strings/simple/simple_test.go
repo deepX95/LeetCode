@@ -12,17 +12,41 @@ func Test_isPalindrome(t *testing.T) {
 		want bool
 	}{
 		{
-			name:"test",
+			name: "test",
 			args: args{
-				s:"A man, a plan, a canal: Panama",
+				s: "A man, a plan, a canal: Panama",
 			},
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := isPalindrome(tt.args.s); got != tt.want {
+			if got := IsPalindrome(tt.args.s); got != tt.want {
 				t.Errorf("isPalindrome() = %v, want %v", got, tt.want)
 			}
+		})
+	}
+}
+
+func TestReverseString(t *testing.T) {
+	type args struct {
+		s []byte
+	}
+	tests := []struct {
+		name string
+		args args
+	}{
+		{
+			name: "test",
+			args: args{
+				s: []byte{
+					'h', 'e', 'l', 'l', 'o',
+				},
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			ReverseString(tt.args.s)
 		})
 	}
 }
