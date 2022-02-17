@@ -1,4 +1,4 @@
-package LC
+package simple
 
 // PlusOne 加一
 func PlusOne(digits []int) []int {

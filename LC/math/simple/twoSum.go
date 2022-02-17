@@ -1,4 +1,4 @@
-package LC
+package simple
 
 // TwoSum 两数之和
 func TwoSum(nums []int, target int) []int {

@@ -1,6 +1,9 @@
 package simple
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func Test_fib(t *testing.T) {
 	type args struct {
@@ -49,4 +52,10 @@ func Test_fib(t *testing.T) {
 			}
 		})
 	}
+}
+
+func Test_maxSubArray(t *testing.T){
+	nums:=[]int{-2,1,-3,4,-1,2,1,-5,4}
+	ret:=maxSubArray(nums)
+	fmt.Println(ret)
 }
