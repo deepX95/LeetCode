@@ -1,6 +1,9 @@
 package simple
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestSearch(t *testing.T) {
 	type args struct {
@@ -29,5 +32,18 @@ func TestSearch(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestSearchInsert(t *testing.T) {
+	nums := []int{1, 3, 5, 6}
+	ret := searchInsert(nums, 7)
+	fmt.Println(ret)
+}
+
+
+func TestNextGreatestLetter(t *testing.T) {
+	letters  := []byte{'c', 'f', 'j'}
+	ret := nextGreatestLetter(letters , 'j')
+	fmt.Println(ret)
 }
 
