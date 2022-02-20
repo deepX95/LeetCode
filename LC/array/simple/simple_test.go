@@ -1,6 +1,7 @@
 package simple
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -49,4 +50,15 @@ func TestSingleNumber(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestRomanToInt(t *testing.T) {
+	ret:=romanToInt("MCMXCIV")
+	fmt.Println(ret)
+}
+
+func TestFindDisappearedNumbers(t *testing.T){
+	nums:=[]int{1,1}
+	ret:=findDisappearedNumbers(nums)
+	fmt.Println(ret)
 }
