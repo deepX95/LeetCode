@@ -62,3 +62,7 @@ func TestFindDisappearedNumbers(t *testing.T){
 	ret:=findDisappearedNumbers(nums)
 	fmt.Println(ret)
 }
+func TestAddBinary(t *testing.T){
+
+	addBinary("11","1")
+}
