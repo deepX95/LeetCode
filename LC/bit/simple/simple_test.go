@@ -9,3 +9,7 @@ func TestIsUnique(t *testing.T) {
 func TestCountBits(t *testing.T) {
 	countBits(2)
 }
+
+func TestBinaryGap(t *testing.T) {
+	binaryGap(8)
+}
