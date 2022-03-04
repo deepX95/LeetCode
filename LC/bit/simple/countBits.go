@@ -4,13 +4,13 @@ package simple
 // fixme:dp
 func countBits(n int) []int {
 	// 位运算
-	ret := make([]int, 0, n+1)
-	for i := 0; i <= n; i++ {
+	ret := make([]int, n+1)
+	for i := range ret {
 		cnt := 0
 		for j := i; j > 0; j &= j - 1 {
 			cnt++
 		}
-		ret = append(ret, cnt)
+		ret[i]= cnt
 	}
 	return ret
 }
