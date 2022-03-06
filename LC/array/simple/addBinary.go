@@ -3,6 +3,7 @@ package simple
 import "strconv"
 
 // addBinary 67. 二进制求和
+// fixme:再写一遍
 func addBinary(a string, b string) (ret string) {
 	carry:=0
 	la,lb:=len(a),len(b)
