@@ -10,6 +10,6 @@ func TestSingleNumber(t *testing.T){
 }
 
 func TestPermute(t *testing.T){
-	ret:=permute([]int{1,2,3})
+	ret:=permute([]int{1,2})
 	fmt.Println(ret)
 }
