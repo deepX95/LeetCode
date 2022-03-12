@@ -10,7 +10,7 @@ func TestIsUnique(t *testing.T) {
 }
 
 func TestMissingNumber(t *testing.T) {
-	ret := missingNumber([]int{3, 0, 1})
+	ret := missingNumber([]int{0})
 	fmt.Println(ret)
 }
 
@@ -36,4 +36,12 @@ func TestNumberOfSteps(t *testing.T) {
 
 func TestHasAlternatingBits(t *testing.T) {
 	hasAlternatingBits(10)
+}
+
+func TestBitwiseComplement(t *testing.T){
+	bitwiseComplement(5)
+}
+
+func TestDecode(t *testing.T)  {
+	decode([]int{1,2,3},1)
 }

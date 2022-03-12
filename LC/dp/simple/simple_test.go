@@ -15,31 +15,31 @@ func Test_fib(t *testing.T) {
 		want int
 	}{
 		{
-			name:"1",
+			name: "1",
 			args: args{
 				1,
 			},
 		},
 		{
-			name:"2",
+			name: "2",
 			args: args{
 				2,
 			},
 		},
 		{
-			name:"3",
+			name: "3",
 			args: args{
 				3,
 			},
 		},
 		{
-			name:"4",
+			name: "4",
 			args: args{
 				4,
 			},
 		},
 		{
-			name:"5",
+			name: "5",
 			args: args{
 				5,
 			},
@@ -54,8 +54,12 @@ func Test_fib(t *testing.T) {
 	}
 }
 
-func Test_maxSubArray(t *testing.T){
-	nums:=[]int{-2,1,-3,4,-1,2,1,-5,4}
-	ret:=maxSubArray(nums)
+func Test_maxSubArray(t *testing.T) {
+	nums := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
+	ret := maxSubArray(nums)
 	fmt.Println(ret)
+}
+func Test_tribonacci(t *testing.T) {
+	ret:=tribonacci(25)
+	println(ret)
 }
