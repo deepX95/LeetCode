@@ -78,3 +78,8 @@ func Test_BuildArray(t *testing.T) {
 	param := []int{0, 2, 1, 5, 3, 4}
 	buildArray(param)
 }
+
+func Test_pivotIndex(t *testing.T){
+	param:=[]int{2,3,-1,8,4}
+	pivotIndex(param)
+}
