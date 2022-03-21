@@ -1,6 +1,9 @@
 package simple
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func Test_isPalindrome(t *testing.T) {
 	type args struct {
@@ -49,4 +52,17 @@ func TestReverseString(t *testing.T) {
 			ReverseString(tt.args.s)
 		})
 	}
+}
+
+func Test_toLowerCase(t *testing.T) {
+	toLowerCase("Hello")
+}
+
+func Test_isFlipedString(t *testing.T) {
+	isFlipedString("aba", "bab")
+}
+
+func Test_freqAlphabets(t *testing.T) {
+	ch := '1' - '1' + 'a'
+	fmt.Println(string(ch))
 }
