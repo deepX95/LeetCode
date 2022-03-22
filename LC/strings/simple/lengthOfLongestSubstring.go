@@ -27,7 +27,8 @@ func lengthOfLongestSubstring(s string) int {
 	ans := 0
 	i := 0
 	for j := 0; j < len(s); j++ {
-		i = maxLengthOfLongestSubstring(i, m[s[j]])
+		tmp := m[s[j]]
+		i = maxLengthOfLongestSubstring(i, tmp)
 		m[s[j]] = j + 1
 		ans = maxLengthOfLongestSubstring(ans, j-i+1)
 	}

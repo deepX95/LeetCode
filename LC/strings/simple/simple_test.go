@@ -66,3 +66,11 @@ func Test_freqAlphabets(t *testing.T) {
 	ch := '1' - '1' + 'a'
 	fmt.Println(string(ch))
 }
+
+func Test_lengthOfLongestSubstring(t *testing.T){
+	lengthOfLongestSubstring("aabja")
+}
+
+func Test_calculate(t *testing.T){
+	calculate("AB")
+}
