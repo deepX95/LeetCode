@@ -2,6 +2,7 @@ package medium
 
 import (
 	"LeetCode/LC/link"
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -144,4 +145,30 @@ func TestDeleteDuplicates(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestMyLinkedList(t *testing.T) {
+	/**
+	 * Your MyLinkedList object will be instantiated and called as such:
+	 * obj := Constructor();
+	 * param_1 := obj.Get(index);
+	 * obj.AddAtHead(val);
+	 * obj.AddAtTail(val);
+	 * obj.AddAtIndex(index,val);
+	 * obj.DeleteAtIndex(index);
+	 */
+	obj := Constructor()
+	obj.AddAtHead(1)
+	obj.AddAtTail(3)
+	obj.AddAtIndex(1, 2)
+	fmt.Println(obj.Get(1))
+	obj.DeleteAtIndex(0)
+	fmt.Println(obj.Get(0))
+
+	//obj := Constructor()
+	//obj.AddAtIndex(0, 10)
+	//obj.AddAtIndex(0, 20)
+	//obj.AddAtIndex(1, 30)
+	//fmt.Println(obj.Get(0))
+
 }
