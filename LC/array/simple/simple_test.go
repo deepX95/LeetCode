@@ -79,7 +79,12 @@ func Test_BuildArray(t *testing.T) {
 	buildArray(param)
 }
 
-func Test_pivotIndex(t *testing.T){
-	param:=[]int{2,3,-1,8,4}
+func Test_pivotIndex(t *testing.T) {
+	param := []int{2, 3, -1, 8, 4}
 	pivotIndex(param)
+}
+
+func Test_maxSubsequence(t *testing.T) {
+	params := []int{2, 1, 3, 3}
+	maxSubsequence(params, 2)
 }
